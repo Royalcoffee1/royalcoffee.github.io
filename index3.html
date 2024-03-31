@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Coffée</title>
+  <link rel="stylesheet" href="a.css">
+  <link rel="icon"  href="za.ico">
+</head>
+<body>
+  <div class="container">
+  <div class="image-container">
+    <div class="image-wrapper">
+      <img src="a.png" alt="Image 1" class="image active" width="1000px">
+      <img src="b.png" alt="Image 2" class="image">
+      
+      <!-- Add more images as needed -->
+    </div>
+    <div class="arrow">&rarr;</div>
+  </div>
+  <div class="description">
+    <!-- Description content goes here -->
+    <h2>Product Description</h2>
+    <p>Welcome to Royal Coffee(instant coffee) ,Our passion for coffee drives us to deliver the best quality and taste to our customers.</p>
+  </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  var images = $('.image');
+  var currentIndex = 0;
+  
+  $('.arrow').click(function() {
+    images.eq(currentIndex).removeClass('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images.eq(currentIndex).addClass('active');
+  });
+});
+</script>
+</html>

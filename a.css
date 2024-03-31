@@ -1,0 +1,43 @@
+body{
+  background-color: #785E2F;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-wrapper {
+  overflow: hidden;
+}
+
+.image {
+  display: none;
+  max-width:300px; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+}
+
+.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: -30px; /* Adjust position as needed */
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.description {
+  margin-left: 40px; /* Adjust spacing as needed */
+  max-width: 300px; /* Adjust width as needed */
+}
